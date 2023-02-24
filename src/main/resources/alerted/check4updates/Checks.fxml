@@ -6,19 +6,31 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alerted.check4updates.checksController">
+<AnchorPane prefHeight="250.0" prefWidth="600.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alerted.check4updates.checksController">
    <children>
-      <Label fx:id="abc" layoutX="19.0" layoutY="63.0" prefHeight="46.0" prefWidth="561.0" style="-fx-background-radius: 13; -fx-background-color: black;" textFill="WHITE" />
+      <Label layoutX="19.0" layoutY="63.0" prefHeight="46.0" prefWidth="561.0" style="-fx-background-radius: 13; -fx-background-color: black;" textFill="WHITE" />
       <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="28.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../Images/pd2.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="107.0" layoutY="68.0" text="My version:" textFill="WHITE" />
-      <Label fx:id="meinVer" layoutX="107.0" layoutY="86.0" prefHeight="18.0" prefWidth="82.0" text="" textFill="WHITE" />
+      <Label fx:id="meinVer1" layoutX="107.0" layoutY="86.0" prefHeight="18.0" prefWidth="82.0" text="" textFill="WHITE" />
       <Label layoutX="228.0" layoutY="68.0" text="Latest version:" textFill="WHITE" />
-      <Label fx:id="lateVer" layoutX="228.0" layoutY="86.0" prefHeight="18.0" prefWidth="90.0" text="" textFill="WHITE" />
-      <Button fx:id="chkForUpdates" layoutX="466.0" layoutY="73.0" mnemonicParsing="false" onAction="#ChekingUpdates1" text="Check 4 updates" textFill="#0e7118" />
-      <Button fx:id="upd" layoutX="372.0" layoutY="73.0" mnemonicParsing="false" onAction="#updateE1" prefHeight="26.0" prefWidth="54.0" style="-fx-background-color: red;" text="update" textFill="#891c9c" visible="false" />
+      <Label fx:id="lateVer1" layoutX="228.0" layoutY="86.0" prefHeight="18.0" prefWidth="90.0" text="" textFill="WHITE" />
+      <Button fx:id="chkForUpdates1" layoutX="466.0" layoutY="73.0" mnemonicParsing="false" onAction="#ChekingUpdates1" text="Check 4 updates" textFill="#0e7118" />
+      <Button fx:id="upd1" layoutX="351.0" layoutY="73.0" mnemonicParsing="false" onAction="#updateE1" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: red;" text="Update" textFill="#891c9c" visible="false" />
+      <Label fx:id="abc1" layoutX="19.0" layoutY="143.0" prefHeight="46.0" prefWidth="561.0" style="-fx-background-radius: 13; -fx-background-color: black;" textFill="WHITE" />
+      <Button fx:id="chkForUpdates2" layoutX="466.0" layoutY="153.0" mnemonicParsing="false" onAction="#ChekingUpdates2" text="Check 4 updates" textFill="#0e7118" />
+      <Button fx:id="upd2" layoutX="353.0" layoutY="154.0" mnemonicParsing="false" onAction="#updateE2" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: red;" text="Update" textFill="#891c9c" visible="false" />
+      <Label layoutX="228.0" layoutY="145.0" text="Latest version:" textFill="WHITE" />
+      <ImageView fitHeight="37.0" fitWidth="46.0" layoutX="25.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/msc.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="118.0" layoutY="68.0" text="My version:" textFill="WHITE" />
+      <Label layoutX="118.0" layoutY="145.0" text="My version:" textFill="WHITE" />
+      <Label fx:id="lateVer2" layoutX="252.0" layoutY="170.0" textFill="WHITE" />
+      <Label fx:id="meinVer2" layoutX="134.0" layoutY="170.0" textFill="WHITE" />
    </children>
 </AnchorPane>
