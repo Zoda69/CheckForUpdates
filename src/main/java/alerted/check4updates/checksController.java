@@ -33,8 +33,10 @@ public class checksController
             for (Element elemented : element)
             {
                 text=elemented.text();
+                System.out.println(text);
                 if(text.startsWith("Скачать") && !(text.substring(18,28).trim().startsWith(meinVer1.getText().trim())))
                 {
+                    System.out.println(text.substring(18,28).trim());
                     upd1.setVisible(true);
                     lateVer1.setText(text.substring(18,28).trim());
                     lateVer1.setTextFill(Color.RED);
@@ -80,11 +82,13 @@ public class checksController
             Document doc = Jsoup.connect("https://vsetop.org/games/1761-my-summer-car.html").get();
             Elements element = doc.select("div.body > b");
             String text = "";
+            System.out.println(text);
             for (Element elemented : element)
             {
                 text=elemented.text();
                 if(text.startsWith("Скачать") && !(text.substring(23,33).trim().startsWith(meinVer2.getText().trim())))
                 {
+                    System.out.println(text.substring(18,28).trim());
                     upd2.setVisible(true);
                     lateVer2.setText(text.substring(23,33).trim());
                     lateVer2.setTextFill(Color.RED);
